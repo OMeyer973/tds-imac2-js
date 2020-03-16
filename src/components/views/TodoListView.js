@@ -1,15 +1,16 @@
 import { h } from 'hyperapp'
+
 import TodoList from '../TodoList'
 import TodoItemInput from '../TodoItemInput'
 
-export default (state, actions) => h('div', {}, [
+export default (state, actions) => h('div', null, [
   TodoList({
     items: state.items,
-    onToggleDone: (id) => () => actions.toggleDone(id)
+    onToggleTodo: actions.toggleTodo
   }),
   TodoItemInput({
-    text: state.addItemInput,
+    text: state.todoInput,
     onInputChange: actions.updateTodoInput,
-    onAdd: actions.addTodoItem
+    onAddTodo: actions.addTodo
   })
 ])

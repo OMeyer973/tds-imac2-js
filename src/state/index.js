@@ -1,17 +1,23 @@
 export default {
   items: [
     {
-      done: true,
-      text: 'teach',
-      id: 'fe2498a3',
+      id: 'qwertyuiop',
+      task: 'faire un cours en stream sur twitch',
+      done: false,
       createdAt: '2020-02-29T19:20+01:00'
     },
     {
-      done: false,
-      text: 'do stuff',
-      id: '98a3fe24',
-      createdAt: '2020-02-29T21:35+01:00'
+      id: 'asdfasdf',
+      task: 'dire bonjour',
+      done: true,
+      createdAt: '2020-02-26T19:20+01:00'
+    },
+    {
+      id: 'qhfdhfgop',
+      task: 'parler seul dans un micro',
+      done: true,
+      createdAt: '2020-02-12T19:20+01:00'
     }
   ],
-  addItemInput: ''
+  todoInput: ''
 }

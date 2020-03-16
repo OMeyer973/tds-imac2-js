@@ -5,10 +5,15 @@
 
 Et les deux commandes suivantes dans deux terminaux différents
 - `npm run start`
-- `npm run test`
 
 L'appli devrait tourner sur le port 3000 (http://localhost:3000). Les logs de `npm run start` devrait vous dire si c'est le cas ou non.
 
 *Important* : nous travaillons ici sur la version 1.2 de hyperapp, quand la plus récente est aujourd'hui la version 2. Pour trouver de l'éventuelle documentation, vous avez accès au repo du framework [sur la branche V1](https://github.com/jorgebucaran/hyperapp/tree/V1).
 
-Suivez les tests pour répondre aux questions
+Fichiers:
+
+- components/views : juste la view, le point d'entrée de notre application
+- components
+  - TodoList: le component qui affiche toutes nos tasks sous forme de liste
+  - TodoItem: une entrée dans la todolist
+  - TodoItemInput: la partie input + button pour ajouter à la todolist
